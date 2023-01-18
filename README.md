@@ -20,6 +20,6 @@ have been practiced in their completion. Please note that the tables have been r
 - Comparing columns with GROUP BY
 - Logical operators
    - AND, OR, BETWEEN, IN, NOT IN
-   - >, <, =, !=, <=, >=
+   - `>, <, =, !=, <=, >=`
 - Aliases
 - LIKE and wildcards
