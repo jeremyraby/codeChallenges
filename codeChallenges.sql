@@ -46,3 +46,14 @@ CREATE TABLE Players (
     lastname TEXT,
     losses INTEGER
 );
+
+-- Insert records into Players
+INSERT INTO Players
+VALUES (
+    'Hikaru', 'Nakamura', 0,
+    'Magnus', 'Karlsen', 2,
+    'Wesley', 'So', 3,
+    'Levon', 'Aronian', 3,
+    'Haik', 'Martirosian', 1,
+    'Vladimir', 'Fedoseev', 1
+);
