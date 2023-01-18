@@ -138,3 +138,11 @@ SELECT name
 FROM films
 WHERE year >= 2010 AND production = 'Marvel Studios'
 ORDER BY name;
+
+-- Code Challenge 11.2 "Get the Ball Rolling!"
+-- Create teams table
+CREATE TABLE teams (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    teamname TEXT,
+    country TEXT
+);
