@@ -57,3 +57,8 @@ VALUES (
     'Haik', 'Martirosian', 1,
     'Vladimir', 'Fedoseev', 1
 );
+
+-- Sort the players by losses to derive the leaderboard.
+SELECT *
+FROM Players
+ORDER BY losses;
