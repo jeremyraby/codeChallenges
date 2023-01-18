@@ -332,3 +332,14 @@ CREATE TABLE teachers (
     firstname TEXT,
     lastname TEXT
 );
+
+-- Insert records into students table
+INSERT INTO students (firstname, lastname, teacherid)
+VALUES (
+    'Melanie', 'Cavazos', 1,
+    'Ted', 'Gray', 2,
+    'Sandra', 'Dennis', 1,
+    'John', 'Lockhart', 3,
+    'Michael', 'Cartwright', 2,
+    'Henry', 'Suh', 1
+);
