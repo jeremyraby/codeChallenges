@@ -108,3 +108,9 @@ VALUES (
     'Seth', 'Gray', 2000,
     'Nelson', 'Gross', 1900
 );
+
+-- Write a query to output the first names of employees whose salaries are between 1500 and 1900.
+SELECT firstname
+FROM staff
+WHERE salary BETWEEN
+    1500 AND 1900;
