@@ -343,3 +343,11 @@ VALUES (
     'Michael', 'Cartwright', 2,
     'Henry', 'Suh', 1
 );
+
+-- Insert records into teachers table.
+INSERT INTO teachers (firstname, lastname)
+VALUES (
+    'Kenneth', 'Rogers',
+    'Julia', 'Marrero',
+    'Mary', 'Foulds'
+);
