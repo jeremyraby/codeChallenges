@@ -227,3 +227,8 @@ VALUES (
     'Geography', 'Mrs Gray', 88, 1,
     'English', 'Mr Gross', 90, 2
 );
+
+-- Write a query to output the average of Sam's exam scores for the first semester.
+SELECT AVG(score)
+FROM sam_grades
+WHERE semester = 1;
