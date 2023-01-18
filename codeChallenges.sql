@@ -305,3 +305,14 @@ VALUES (
     'Grayslake', '3234 Cunningham Court', 600, 'Rented',
     'Great Neck', '1927 Romines Mill Road', 900, 'Not rented'
 );
+
+/*
+Write a query to output the apartments whose prices are greater than the average and are also not 
+rented, sorted by the 'Price' column.
+*/
+SELECT *
+FROM Apartments
+WHERE 
+    price > (SELECT AVG(price) FROM Apartments)
+    AND status = 'Not rented'
+ORDER BY price;
