@@ -252,3 +252,12 @@ VALUES (
     'Ice Cream', 'Milk Product', 300, 7,
     'Brazil Nut', 'Nuts', 980, 62
 );
+
+/*
+Help Monica lose weight by writing a query to choose the foods, whose fat percentages are lower 
+than the average from the "Foods" table.
+*/
+SELECT *
+FROM Foods
+WHERE 
+    fatpercentage  < (SELECT AVG(fatpercentage) FROM Foods);
