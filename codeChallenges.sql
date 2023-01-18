@@ -325,3 +325,10 @@ CREATE TABLE students (
     lastname TEXT,
     teacherid INTEGER
 );
+
+-- Create teachers table
+CREATE TABLE teachers (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    firstname TEXT,
+    lastname TEXT
+);
