@@ -279,3 +279,8 @@ VALUES (
     'Chess Pie', 35,
     'Cookiedilla', 10
 );
+
+-- Write a query to output only chocolate desserts.
+SELECT *
+FROM desserts
+WHERE name LIKE '%Chocolate%';
