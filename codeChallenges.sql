@@ -268,3 +268,14 @@ CREATE TABLE desserts (
     name TEXT PRIMARY KEY,
     price INTEGER
 );
+
+-- Insert records into desserts table.
+INSERT INTO desserts 
+VALUES (
+    'Chocolate Pudding', 15,
+    'Easy Chocolate Covered Oreos', 30,
+    'Flourless Chocolate Cake', 50,
+    'Vanilla Pudding', 20,
+    'Chess Pie', 35,
+    'Cookiedilla', 10
+);
