@@ -261,3 +261,10 @@ SELECT *
 FROM Foods
 WHERE 
     fatpercentage  < (SELECT AVG(fatpercentage) FROM Foods);
+
+-- Code Challenge 15.2 "Chocolate!"
+-- Create desserts table
+CREATE TABLE desserts (
+    name TEXT PRIMARY KEY,
+    price INTEGER
+);
