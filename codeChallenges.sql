@@ -316,3 +316,12 @@ WHERE
     price > (SELECT AVG(price) FROM Apartments)
     AND status = 'Not rented'
 ORDER BY price;
+
+-- Code Challenge 18.2 "Mentor and Apprentice"
+-- Create students table
+CREATE TABLE students (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    firstname TEXT,
+    lastname TEXT,
+    teacherid INTEGER
+);
