@@ -288,9 +288,20 @@ WHERE name LIKE '%Chocolate%';
 -- Code Challenge 17 "Apartments"
 -- Create Apartments table
 CREATE TABLE Apartments (
-   id INTEGER PRIMARY KEY,
+   id INTEGER PRIMARY KEY AUTOINCREMENT,
    city TEXT,
    address TEXT,
    price INTEGER,
    status TEXT 
+);
+
+-- Insert records into Apartments table.
+INSERT INTO Apartments (city, address, price, status)
+VALUES (
+    'Las Vegas', '732 Hall Street', 1000, 'Not rented',
+    'Marlboro', '985 Huntx Lane', 800, 'Not rented',
+    'Moretown', '3757 Wines Lane', 700, 'Not rented',
+    'Owatonna', '314 Pritchard Court', 500, 'Rented',
+    'Grayslake', '3234 Cunningham Court', 600, 'Rented',
+    'Great Neck', '1927 Romines Mill Road', 900, 'Not rented'
 );
