@@ -419,3 +419,13 @@ VALUES (
     'Jan-Krzysztof Duda', 'Poland', 1998, 2757,
     'Aryan Tari', 'Norway', 1999, 2633
 );
+
+-- Insert records into TataSteel table
+INSERT INTO TataSteel
+VALUES (
+    'Magnus Carlsen', 'Norway', 1990, 2863,
+    'Wesley So', 'USA', '1993', 2770,
+    'Van Foreest Jorden', 'Netherlands', 1999, 2671,
+    'Fabiano Caurana', 'USA', 1992, 2828,
+    'Yu Yangyi', 'China', 1994, 2709
+);
