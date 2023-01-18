@@ -363,3 +363,12 @@ WHERE
     students.teacherid =
     teachers.id
 ORDER BY students.id;
+
+-- Code Challenge 19.2 "Sorting the Inventory"
+-- Create products table
+CREATE TABLE products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    productname TEXT,
+    price INTEGER,
+    categoryid INTEGER
+);
