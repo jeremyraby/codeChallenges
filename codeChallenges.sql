@@ -401,3 +401,10 @@ CREATE TABLE NorwayChess (
     birthyear INTEGER,
     rating INTEGER
 );
+
+CREATE TABLE TataSteel (
+    player TEXT PRIMARY KEY,
+    country TEXT,
+    birthyear INTEGER,
+    rating INTEGER
+);
