@@ -392,3 +392,12 @@ INNER JOIN categories
 ON 
     products.categoryid =
     categories.id;
+
+-- Code Challenge 20.2 "Chess Tournament"
+-- Create Norway Chess table
+CREATE TABLE NorwayChess (
+    player TEXT PRIMARY KEY,
+    country TEXT,
+    birthyear INTEGER,
+    rating INTEGER
+);
