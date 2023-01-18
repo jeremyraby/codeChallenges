@@ -372,3 +372,9 @@ CREATE TABLE products (
     price INTEGER,
     categoryid INTEGER
 );
+
+-- Create categories table
+CREATE TABLE categories (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    categoryname TEXT
+);
