@@ -429,3 +429,22 @@ VALUES (
     'Fabiano Caurana', 'USA', 1992, 2828,
     'Yu Yangyi', 'China', 1994, 2709
 );
+
+/*
+Write a query to merge 'NorwayChess' and 'TataSteel' tables. Then order the merged table by 'Rating' in descending order and 
+show the final table of participants. No duplicates.
+*/
+SELECT 
+    player, 
+    country, 
+    birthyear, 
+    rating
+FROM NorwayChess
+UNION
+SELECT 
+    player,
+    country,
+    birthyear,
+    rating
+FROM TataSteel
+ORDER BY rating DESC;
