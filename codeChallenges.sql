@@ -408,3 +408,14 @@ CREATE TABLE TataSteel (
     birthyear INTEGER,
     rating INTEGER
 );
+
+-- Insert records into NorwayChess table
+INSERT INTO NorwayChess
+VALUES (
+    'Magnus Carlsen', 'Norway', 1990, 2863,
+    'Alireza Firouzja', 'Iran', 2003, 2728,
+    'Levon Aronian', 'Armenia', 1982, 2767,
+    'Fabiano Caurana', 'USA', 1992, 2828,
+    'Jan-Krzysztof Duda', 'Poland', 1998, 2757,
+    'Aryan Tari', 'Norway', 1999, 2633
+);
