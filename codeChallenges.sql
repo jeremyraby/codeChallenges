@@ -378,3 +378,17 @@ CREATE TABLE categories (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     categoryname TEXT
 );
+
+/*
+Each product has a category.
+Write a query to output all products with their categories (productname-price-categoryname) in one table.
+*/
+SELECT
+    products.productname,
+    products.price,
+    categories.categoryname
+FROM products
+INNER JOIN categories
+ON 
+    products.categoryid =
+    categories.id
