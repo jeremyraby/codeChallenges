@@ -2,7 +2,7 @@
 -- Create 'Products' list
 CREATE TABLE Products (
     productname TEXT PRIMARY KEY,
-    price INTEGER,
+    price DEC,
     productiondate DATE,
     expirationdate DATE
 );
@@ -97,4 +97,14 @@ CREATE TABLE staff (
     firstname TEXT,
     lastname TEXT,
     salary INTEGER
+);
+
+-- Insert records into staff table.
+INSERT INTO staff (firstname, lastname, salary)
+VALUES (
+    'John', 'Smith', 1500,
+    'David', 'Gibson', 1750,
+    'Lisa', 'Anderson', 1300,
+    'Seth', 'Gray', 2000,
+    'Nelson', 'Gross', 1900
 );
