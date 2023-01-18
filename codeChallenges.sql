@@ -62,3 +62,10 @@ VALUES (
 SELECT *
 FROM Players
 ORDER BY losses;
+
+-- Code Challenge 8 "Cakes"
+-- Create 'cakes' table
+CREATE TABLE cakes (
+    name TEXT PRIMARY KEY,
+    calories INTEGER
+);
