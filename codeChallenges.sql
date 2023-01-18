@@ -112,5 +112,13 @@ VALUES (
 -- Write a query to output the first names of employees whose salaries are between 1500 and 1900.
 SELECT firstname
 FROM staff
-WHERE salary BETWEEN
-    1500 AND 1900;
+WHERE salary BETWEEN 1500 AND 1900;
+
+-- Code Challenge 10.2 "Superheroes"
+-- Create films table
+CREATE TABLE films (
+    name TEXT PRIMARY KEY,
+    genre TEXT,
+    year INTEGER,
+    production TEXT
+);
