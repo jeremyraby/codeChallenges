@@ -146,3 +146,14 @@ CREATE TABLE teams (
     teamname TEXT,
     country TEXT
 );
+
+-- Insert records into teams table
+INSERT INTO teams (teamname, country)
+VALUES (
+    'FC Barcelona', 'Spain',
+    'FC Bayern Munich', 'Germany',
+    'FC Chelsea', 'England',
+    'FC Roma', 'Italy',
+    'FC Leon', 'France',
+    'FC Ajax', 'Nederland'
+);
