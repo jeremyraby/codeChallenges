@@ -1,4 +1,4 @@
--- Code Challenge 4.2
+-- Code Challenge 4.2 "Best Before"
 -- Create 'Products' list
 CREATE TABLE Products (
     productname TEXT PRIMARY KEY,
@@ -22,7 +22,7 @@ SELECT
     expirationdate 
 FROM Products;
 
--- Code Challenge 5.2
+-- Code Challenge 5.2 "Customer Copies"
 -- Create 'Operation' table
 CREATE TABLE Operation (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -39,3 +39,10 @@ VALUES (
 -- Write a query to show only the unique checks that are given to the customer.
 SELECT DISTINCT checks FROM Operation;
 
+-- Code Challenge 6.2 "Leaderboarding"
+-- Create 'Players' table
+CREATE TABLE Players (
+    firstname TEXT PRIMARY KEY,
+    lastname TEXT,
+    losses INTEGER
+);
