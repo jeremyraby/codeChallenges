@@ -132,3 +132,9 @@ VALUES (
     'The Avengers', 'Superheroes', 'Marvel Studios',
     'Avengers: Endgame', 'Superheroes', 'Marvel Studios'
 );
+
+-- Write a query to output the names of all of the films which were produced by Marvel Studios in 2010 or later, sorted by the 'name' column.
+SELECT name
+FROM films
+WHERE year >= 2010 AND production = 'Marvel Studios'
+ORDER BY name;
