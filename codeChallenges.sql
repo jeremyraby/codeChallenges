@@ -69,3 +69,18 @@ CREATE TABLE cakes (
     name TEXT PRIMARY KEY,
     calories INTEGER
 );
+
+-- Insert records into cakes
+INSERT INTO cakes 
+VALUES (
+    'Apple Cake', 100,
+    'Banana Cake', 200,
+    'Pound Cake', 180,
+    'Sponge Cake', 100,
+    'Genoise Cake', 360,
+    'Chiffon Cake', 250,
+    'Opera Cake', 90,
+    'Cheese Cake', 370
+);
+
+-- Write a query to sort the cakes by calorie count and select the first 3 cakes from the list to offer the customer.
