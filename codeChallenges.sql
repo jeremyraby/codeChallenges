@@ -163,3 +163,35 @@ SELECT teamname, country
 FROM teams
 WHERE country
 IN ('Spain', 'England', 'Germany');
+
+-- Code Challenge 12.2 "Annual Bonuses"
+-- Add fields "department" and "experience" to staff table
+ALTER TABLE staff
+ADD department TEXT,
+ADD experience INTEGER;
+
+-- Update staff table with data for "department" and "experience" fields.
+UPDATE TABLE staff
+SET department = 'Marketing',
+SET experience = 2
+WHERE id = 1;
+
+UPDATE TABLE staff
+SET department = 'IT',
+SET experience = 3
+WHERE id = 2;
+
+UPDATE TABLE staff
+SET department = 'Marketing',
+SET experience = 3
+WHERE id = 3;
+
+UPDATE TABLE staff
+SET department = 'Finance',
+SET experience = 6
+WHERE id = 4;
+
+UPDATE TABLE staff
+SET department = 'Security',
+SET experience = 1
+WHERE id = 5;
