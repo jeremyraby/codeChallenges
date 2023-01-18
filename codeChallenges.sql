@@ -208,3 +208,12 @@ SELECT
     (experience * 500) + (salary * 12) AS total
 FROM staff
 ORDER BY total;
+
+-- Code Challenge 13.2 "Average Grades"
+-- Create sam_grades table
+CREATE TABLE sam_grades (
+    subject TEXT PRIMARY KEY,
+    teacher TEXT,
+    score INTEGER,
+    semester INTEGER
+);
