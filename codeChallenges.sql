@@ -157,3 +157,9 @@ VALUES (
     'FC Leon', 'France',
     'FC Ajax', 'Nederland'
 );
+
+-- Write a query to output the team names and the countries of all teams that have played in La Liga (Spain), Premier League (England) and Bundesliga (Germany)․
+SELECT teamname, country
+FROM teams
+WHERE country
+IN ('Spain', 'England', 'Germany');
