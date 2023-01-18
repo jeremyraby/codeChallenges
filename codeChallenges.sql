@@ -88,3 +88,13 @@ SELECT *
 FROM cakes
 ORDER BY calories
 LIMIT 3;
+
+-- Code challenge 9.2 "Salary Range"
+-- Create 'staff' table
+
+CREATE TABLE staff (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    firstname TEXT,
+    lastname TEXT,
+    salary INTEGER
+);
