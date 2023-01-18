@@ -122,3 +122,13 @@ CREATE TABLE films (
     year INTEGER,
     production TEXT
 );
+
+-- Insert records into films table
+INSERT INTO films 
+VALUES (
+    'Iron Man', 'Superheroes', 2008, 'Marvel Studios',
+    'Venom', 'Superheroes', 2018, 'Columbia Pictures',
+    'The Dark Knight', 'Superheroes', 'Warner Brothers',
+    'The Avengers', 'Superheroes', 'Marvel Studios',
+    'Avengers: Endgame', 'Superheroes', 'Marvel Studios'
+);
