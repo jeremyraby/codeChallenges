@@ -284,3 +284,13 @@ VALUES (
 SELECT *
 FROM desserts
 WHERE name LIKE '%Chocolate%';
+
+-- Code Challenge 17 "Apartments"
+-- Create Apartments table
+CREATE TABLE Apartments (
+   id INTEGER PRIMARY KEY,
+   city TEXT,
+   address TEXT,
+   price INTEGER,
+   status TEXT 
+);
