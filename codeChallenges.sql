@@ -241,3 +241,14 @@ CREATE TABLE Foods (
     price INTEGER,
     fatpercentage INTEGER
 );
+
+-- Insert records into Foods table
+INSERT INTO Foods 
+VALUES (
+    'Cheesecake', 'Dessert', 600, 35,
+    'Canned Salmon', 'Seafood', 1650, 8,
+    'Avocado', 'Fruit', 810, 22,
+    'Fried Chicken', 'Meat Product', 1290, 11,
+    'Ice Cream', 'Milk Product', 300, 7,
+    'Brazil Nut', 'Nuts', 980, 62
+);
