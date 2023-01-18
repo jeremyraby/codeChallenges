@@ -217,3 +217,13 @@ CREATE TABLE sam_grades (
     score INTEGER,
     semester INTEGER
 );
+
+-- Insert records into sam_grades table
+INSERT INTO sam_grades 
+VALUES (
+    'Math', 'Mr Smith', 100, 1,
+    'Chemistry', 'Mr Gibson', 95, 2,
+    'Physics', 'Ms Anderson', 97, 1,
+    'Geography', 'Mrs Gray', 88, 1,
+    'English', 'Mr Gross', 90, 2
+);
