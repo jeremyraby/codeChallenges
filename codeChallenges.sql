@@ -232,3 +232,12 @@ VALUES (
 SELECT AVG(score)
 FROM sam_grades
 WHERE semester = 1;
+
+-- Code Challenge 14.2 "Let's Get Fit!"
+-- Create Foods table
+CREATE TABLE Foods (
+    name TEXT PRIMARY KEY,
+    category TEXT,
+    price INTEGER,
+    fatpercentage INTEGER
+);
