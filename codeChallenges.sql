@@ -84,3 +84,7 @@ VALUES (
 );
 
 -- Write a query to sort the cakes by calorie count and select the first 3 cakes from the list to offer the customer.
+SELECT *
+FROM cakes
+ORDER BY calories
+LIMIT 3;
