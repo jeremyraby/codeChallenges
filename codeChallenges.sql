@@ -9,11 +9,10 @@ CREATE TABLE Products (
 
 -- Insert records into Products
 INSERT INTO Products 
-VALUES (
-    'Yogurt', 200, 2020-11-19, 2021-01-19,
-    'Juice', 380.00, 2020-10-10, 2022-10-10,
-    'Milk', 520.00, 2020-08-19, 2020-08-23 
-);
+VALUES 
+    ('Yogurt', 200, 2020-11-19, 2021-01-19),
+    ('Juice', 380.00, 2020-10-10, 2022-10-10),
+    ('Milk', 520.00, 2020-08-19, 2020-08-23);
 
 -- Write a query to select the ProductName, ProductionDate and ExpirationDate.
 SELECT 
@@ -31,10 +30,9 @@ CREATE TABLE Operation (
 
 -- Insert records into Operation
 INSERT INTO Operation (checks)
-VALUES (
-    'Check 1', 'Check 2', 'Check3',
-    'Check 1', 'Check 2', 'Check3'
-);
+VALUES 
+    ('Check 1', 'Check 2', 'Check3'),
+    ('Check 1', 'Check 2', 'Check3');
 
 -- Write a query to show only the unique checks that are given to the customer.
 SELECT DISTINCT checks FROM Operation;
@@ -49,14 +47,13 @@ CREATE TABLE Players (
 
 -- Insert records into Players
 INSERT INTO Players
-VALUES (
-    'Hikaru', 'Nakamura', 0,
-    'Magnus', 'Karlsen', 2,
-    'Wesley', 'So', 3,
-    'Levon', 'Aronian', 3,
-    'Haik', 'Martirosian', 1,
-    'Vladimir', 'Fedoseev', 1
-);
+VALUES 
+    ('Hikaru', 'Nakamura', 0),
+    ('Magnus', 'Karlsen', 2),
+    ('Wesley', 'So', 3),
+    ('Levon', 'Aronian', 3),
+    ('Haik', 'Martirosian', 1),
+    ('Vladimir', 'Fedoseev', 1);
 
 -- Sort the players by losses to derive the leaderboard.
 SELECT *
@@ -72,16 +69,15 @@ CREATE TABLE cakes (
 
 -- Insert records into cakes
 INSERT INTO cakes 
-VALUES (
-    'Apple Cake', 100,
-    'Banana Cake', 200,
-    'Pound Cake', 180,
-    'Sponge Cake', 100,
-    'Genoise Cake', 360,
-    'Chiffon Cake', 250,
-    'Opera Cake', 90,
-    'Cheese Cake', 370
-);
+VALUES 
+    ('Apple Cake', 100),
+    ('Banana Cake', 200),
+    ('Pound Cake', 180),
+    ('Sponge Cake', 100),
+    ('Genoise Cake', 360),
+    ('Chiffon Cake', 250),
+    ('Opera Cake', 90),
+    ('Cheese Cake', 370);
 
 -- Write a query to sort the cakes by calorie count and select the first 3 cakes from the list to offer the customer.
 SELECT *
@@ -101,13 +97,12 @@ CREATE TABLE staff (
 
 -- Insert records into staff table.
 INSERT INTO staff (firstname, lastname, salary)
-VALUES (
-    'John', 'Smith', 1500,
-    'David', 'Gibson', 1750,
-    'Lisa', 'Anderson', 1300,
-    'Seth', 'Gray', 2000,
-    'Nelson', 'Gross', 1900
-);
+VALUES 
+    ('John', 'Smith', 1500),
+    ('David', 'Gibson', 1750),
+    ('Lisa', 'Anderson', 1300),
+    ('Seth', 'Gray', 2000),
+    ('Nelson', 'Gross', 1900);
 
 -- Write a query to output the first names of employees whose salaries are between 1500 and 1900.
 SELECT firstname
@@ -125,13 +120,12 @@ CREATE TABLE films (
 
 -- Insert records into films table
 INSERT INTO films 
-VALUES (
-    'Iron Man', 'Superheroes', 2008, 'Marvel Studios',
-    'Venom', 'Superheroes', 2018, 'Columbia Pictures',
-    'The Dark Knight', 'Superheroes', 'Warner Brothers',
-    'The Avengers', 'Superheroes', 'Marvel Studios',
-    'Avengers: Endgame', 'Superheroes', 'Marvel Studios'
-);
+VALUES 
+    ('Iron Man', 'Superheroes', 2008, 'Marvel Studios'),
+    ('Venom', 'Superheroes', 2018, 'Columbia Pictures'),
+    ('The Dark Knight', 'Superheroes', 'Warner Brothers'),
+    ('The Avengers', 'Superheroes', 'Marvel Studios'),
+    ('Avengers: Endgame', 'Superheroes', 'Marvel Studios');
 
 -- Write a query to output the names of all of the films which were produced by Marvel Studios in 2010 or later, sorted by the 'name' column.
 SELECT name
@@ -149,14 +143,13 @@ CREATE TABLE teams (
 
 -- Insert records into teams table
 INSERT INTO teams (teamname, country)
-VALUES (
-    'FC Barcelona', 'Spain',
-    'FC Bayern Munich', 'Germany',
-    'FC Chelsea', 'England',
-    'FC Roma', 'Italy',
-    'FC Leon', 'France',
-    'FC Ajax', 'Nederland'
-);
+VALUES 
+    ('FC Barcelona', 'Spain'),
+    ('FC Bayern Munich', 'Germany'),
+    ('FC Chelsea', 'England'),
+    ('FC Roma', 'Italy'),
+    ('FC Leon', 'France'),
+    ('FC Ajax', 'Nederland');
 
 -- Write a query to output the team names and the countries of all teams that have played in La Liga (Spain), Premier League (England) and Bundesliga (Germany)․
 SELECT teamname, country
@@ -220,13 +213,12 @@ CREATE TABLE sam_grades (
 
 -- Insert records into sam_grades table
 INSERT INTO sam_grades 
-VALUES (
-    'Math', 'Mr Smith', 100, 1,
-    'Chemistry', 'Mr Gibson', 95, 2,
-    'Physics', 'Ms Anderson', 97, 1,
-    'Geography', 'Mrs Gray', 88, 1,
-    'English', 'Mr Gross', 90, 2
-);
+VALUES 
+    ('Math', 'Mr Smith', 100, 1),
+    ('Chemistry', 'Mr Gibson', 95, 2),
+    ('Physics', 'Ms Anderson', 97, 1),
+    ('Geography', 'Mrs Gray', 88, 1),
+    ('English', 'Mr Gross', 90, 2);
 
 -- Write a query to output the average of Sam's exam scores for the first semester.
 SELECT AVG(score)
@@ -244,14 +236,13 @@ CREATE TABLE Foods (
 
 -- Insert records into Foods table
 INSERT INTO Foods 
-VALUES (
-    'Cheesecake', 'Dessert', 600, 35,
-    'Canned Salmon', 'Seafood', 1650, 8,
-    'Avocado', 'Fruit', 810, 22,
-    'Fried Chicken', 'Meat Product', 1290, 11,
-    'Ice Cream', 'Milk Product', 300, 7,
-    'Brazil Nut', 'Nuts', 980, 62
-);
+VALUES 
+    ('Cheesecake', 'Dessert', 600, 35),
+    ('Canned Salmon', 'Seafood', 1650, 8),
+    ('Avocado', 'Fruit', 810, 22),
+    ('Fried Chicken', 'Meat Product', 1290, 11),
+    ('Ice Cream', 'Milk Product', 300, 7),
+    ('Brazil Nut', 'Nuts', 980, 62);
 
 /*
 Help Monica lose weight by writing a query to choose the foods, whose fat percentages are lower 
@@ -271,14 +262,13 @@ CREATE TABLE desserts (
 
 -- Insert records into desserts table.
 INSERT INTO desserts 
-VALUES (
-    'Chocolate Pudding', 15,
-    'Easy Chocolate Covered Oreos', 30,
-    'Flourless Chocolate Cake', 50,
-    'Vanilla Pudding', 20,
-    'Chess Pie', 35,
-    'Cookiedilla', 10
-);
+VALUES 
+    ('Chocolate Pudding', 15),
+    ('Easy Chocolate Covered Oreos', 30),
+    ('Flourless Chocolate Cake', 50),
+    ('Vanilla Pudding', 20),
+    ('Chess Pie', 35),
+    ('Cookiedilla', 10);
 
 -- Write a query to output only chocolate desserts.
 SELECT *
@@ -297,14 +287,13 @@ CREATE TABLE Apartments (
 
 -- Insert records into Apartments table.
 INSERT INTO Apartments (city, address, price, status)
-VALUES (
-    'Las Vegas', '732 Hall Street', 1000, 'Not rented',
-    'Marlboro', '985 Huntx Lane', 800, 'Not rented',
-    'Moretown', '3757 Wines Lane', 700, 'Not rented',
-    'Owatonna', '314 Pritchard Court', 500, 'Rented',
-    'Grayslake', '3234 Cunningham Court', 600, 'Rented',
-    'Great Neck', '1927 Romines Mill Road', 900, 'Not rented'
-);
+VALUES
+    ('Las Vegas', '732 Hall Street', 1000, 'Not rented'),
+    ('Marlboro', '985 Huntx Lane', 800, 'Not rented'),
+    ('Moretown', '3757 Wines Lane', 700, 'Not rented'),
+    ('Owatonna', '314 Pritchard Court', 500, 'Rented'),
+    ('Grayslake', '3234 Cunningham Court', 600, 'Rented'),
+    ('Great Neck', '1927 Romines Mill Road', 900, 'Not rented');
 
 /*
 Write a query to output the apartments whose prices are greater than the average and are also not 
@@ -335,22 +324,20 @@ CREATE TABLE teachers (
 
 -- Insert records into students table
 INSERT INTO students (firstname, lastname, teacherid)
-VALUES (
-    'Melanie', 'Cavazos', 1,
-    'Ted', 'Gray', 2,
-    'Sandra', 'Dennis', 1,
-    'John', 'Lockhart', 3,
-    'Michael', 'Cartwright', 2,
-    'Henry', 'Suh', 1
-);
+VALUES
+    ('Melanie', 'Cavazos', 1),
+    ('Ted', 'Gray', 2),
+    ('Sandra', 'Dennis', 1),
+    ('John', 'Lockhart', 3),
+    ('Michael', 'Cartwright', 2),
+    ('Henry', 'Suh', 1);
 
 -- Insert records into teachers table.
 INSERT INTO teachers (firstname, lastname)
-VALUES (
-    'Kenneth', 'Rogers',
-    'Julia', 'Marrero',
-    'Mary', 'Foulds'
-);
+VALUES
+    ('Kenneth', 'Rogers'),
+    ('Julia', 'Marrero'),
+    ('Mary', 'Foulds');
 
 -- Write a query to output all of the students with their teachers' last names in one table, sorted by students ID.
 SELECT 
@@ -411,24 +398,22 @@ CREATE TABLE TataSteel (
 
 -- Insert records into NorwayChess table
 INSERT INTO NorwayChess
-VALUES (
-    'Magnus Carlsen', 'Norway', 1990, 2863,
-    'Alireza Firouzja', 'Iran', 2003, 2728,
-    'Levon Aronian', 'Armenia', 1982, 2767,
-    'Fabiano Caurana', 'USA', 1992, 2828,
-    'Jan-Krzysztof Duda', 'Poland', 1998, 2757,
-    'Aryan Tari', 'Norway', 1999, 2633
-);
+VALUES
+    ('Magnus Carlsen', 'Norway', 1990, 2863),
+    ('Alireza Firouzja', 'Iran', 2003, 2728),
+    ('Levon Aronian', 'Armenia', 1982, 2767),
+    ('Fabiano Caurana', 'USA', 1992, 2828),
+    ('Jan-Krzysztof Duda', 'Poland', 1998, 2757),
+    ('Aryan Tari', 'Norway', 1999, 2633);
 
 -- Insert records into TataSteel table
 INSERT INTO TataSteel
-VALUES (
-    'Magnus Carlsen', 'Norway', 1990, 2863,
-    'Wesley So', 'USA', '1993', 2770,
-    'Van Foreest Jorden', 'Netherlands', 1999, 2671,
-    'Fabiano Caurana', 'USA', 1992, 2828,
-    'Yu Yangyi', 'China', 1994, 2709
-);
+VALUES
+    ('Magnus Carlsen', 'Norway', 1990, 2863),
+    ('Wesley So', 'USA', '1993', 2770),
+    ('Van Foreest Jorden', 'Netherlands', 1999, 2671),
+    ('Fabiano Caurana', 'USA', 1992, 2828),
+    ('Yu Yangyi', 'China', 1994, 2709);
 
 /*
 Write a query to merge 'NorwayChess' and 'TataSteel' tables. Then order the merged table by 'Rating' in descending order and 
