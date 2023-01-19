@@ -459,3 +459,12 @@ CREATE TABLE users (
     acc_id INTEGER PRIMARY KEY,
     status TEXT
 );
+
+-- Insert records into users table
+INSERT INTO users
+VALUES 
+    ('Tom', 'Davidson', 504718, 'online'),
+    ('James', 'Bann', 3223000, 'offline'),
+    ('Charity', 'Ramsey', 2161545, 'offline'),
+    ('Jodie', 'Rossi', 25456360, 'online'),
+    ('Sebastian', 'Eaton', 781515117, 'online');
