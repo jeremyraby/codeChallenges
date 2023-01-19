@@ -451,7 +451,7 @@ SELECT
 FROM TataSteel
 ORDER BY rating DESC;
 
--- Code Challenge "Views"
+-- Code Challenge 26.2 "Views"
 -- Create users table
 CREATE TABLE users (
     name TEXT,
