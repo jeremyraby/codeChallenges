@@ -366,6 +366,23 @@ CREATE TABLE categories (
     categoryname TEXT
 );
 
+-- Insert records into products table
+INSERT INTO products (productname, price, categoryid)
+VALUES
+    ('Apple', 800, 1),
+    ('Potato', 400, 2),
+    ('Orange', 900, 1),
+    ('Tomato', 450, 2),
+    ('OrangeJuice', 250, 3),
+    ('TomatoJuice', 350, 3);
+
+-- Insert records into categories table
+INSERT INTO categories (categoryname)
+VALUES 
+    ('Fruit'),
+    ('Vegetable'),
+    ('Juice'),
+    ('Chocolate');
 /*
 Each product has a category.
 Write a query to output all products with their categories (productname-price-categoryname) in one table.
