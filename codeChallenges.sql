@@ -468,3 +468,13 @@ VALUES
     ('Charity', 'Ramsey', 2161545, 'offline'),
     ('Jodie', 'Rossi', 25456360, 'online'),
     ('Sebastian', 'Eaton', 781515117, 'online');
+
+/*
+Write a query to create a view to show only 'acc_id' 
+and 'status' columns and then show that view.
+*/
+CREATE VIEW acct_info AS
+SELECT acc_id, status
+FROM users;
+
+SELECT * FROM acct_info;
