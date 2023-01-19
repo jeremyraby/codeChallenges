@@ -23,3 +23,4 @@ have been practiced in their completion. Please note that the tables have been r
    - `>, <, =, !=, <=, >=`
 - Aliases
 - LIKE and wildcards
+- Views
